@@ -83,12 +83,13 @@ public class TaskController {
 						stringbuffer.append(s + "\n");
 					}
 				}
+				return stringbuffer.toString();
 			} catch (IOException e) {
 				System.out.println("Erro ao executar o comando");
 			}
 			
 		}
-		return "SO n„o encontrado ou erro ao informar a lista de tarefas.";
+		return "SO n√£o encontrado ou erro ao informar a lista de tarefas.";
 	}
 
 	public static boolean CheckPIDorName(String task) {
